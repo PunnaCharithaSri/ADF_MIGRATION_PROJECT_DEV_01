@@ -1,0 +1,36 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf-migration-project-dev-01"
+		},
+		"DS_SQL_MIGRATION_password": {
+			"value": ""
+		},
+		"SqlServer1_password": {
+			"value": ""
+		},
+		"DS_SQL_MIGRATION_properties_typeProperties_server": {
+			"value": "PRAVALLIKA\\SQLEXPRESS"
+		},
+		"DS_SQL_MIGRATION_properties_typeProperties_database": {
+			"value": "Visionboardmigration"
+		},
+		"DS_SQL_MIGRATION_properties_typeProperties_userName": {
+			"value": "sa"
+		},
+		"SqlServer1_properties_typeProperties_server": {
+			"value": "PRAVALLIKA\\SQLEXPRESS"
+		},
+		"SqlServer1_properties_typeProperties_database": {
+			"value": "Visionboardmigration"
+		},
+		"SqlServer1_properties_typeProperties_userName": {
+			"value": "sa"
+		},
+		"integrationRuntime1_properties_typeProperties_linkedInfo_resourceId": {
+			"value": "/subscriptions/312009e1-1511-4975-acfa-117e678074ae/resourcegroups/rg_adf_lab/providers/Microsoft.DataFactory/factories/adf-dev-prac-01/integrationruntimes/SHintegrationRuntime"
+		}
+	}
+}
