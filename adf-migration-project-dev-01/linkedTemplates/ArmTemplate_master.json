@@ -7,13 +7,29 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "adf-migration-project-dev-01"
 		},
+		"ADLS_SQL_PARQUET_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'ADLS_SQL_PARQUET'"
+		},
 		"DS_SQL_MIGRATION_password": {
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'DS_SQL_MIGRATION'"
 		},
+		"LS_ONPREM_sqlserver_DW_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'LS_ONPREM_sqlserver_DW'"
+		},
+		"LS_SQLSERVER_TBLLKUP_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'LS_SQLSERVER_TBLLKUP'"
+		},
 		"SqlServer1_password": {
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'SqlServer1'"
+		},
+		"ADLS_SQL_PARQUET_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlsmigrationprojectdev.dfs.core.windows.net/"
 		},
 		"DS_SQL_MIGRATION_properties_typeProperties_server": {
 			"type": "string",
@@ -24,6 +40,30 @@
 			"defaultValue": "Visionboardmigration"
 		},
 		"DS_SQL_MIGRATION_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "sa"
+		},
+		"LS_ONPREM_sqlserver_DW_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "PRAVALLIKA\\SQLEXPRESS"
+		},
+		"LS_ONPREM_sqlserver_DW_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "RetailDW_Dev"
+		},
+		"LS_ONPREM_sqlserver_DW_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "sa"
+		},
+		"LS_SQLSERVER_TBLLKUP_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "PRAVALLIKA\\SQLEXPRESS"
+		},
+		"LS_SQLSERVER_TBLLKUP_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "RetailDW_Dev"
+		},
+		"LS_SQLSERVER_TBLLKUP_properties_typeProperties_userName": {
 			"type": "string",
 			"defaultValue": "sa"
 		},
@@ -70,11 +110,23 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
+					"ADLS_SQL_PARQUET_accountKey": {
+						"value": "[parameters('ADLS_SQL_PARQUET_accountKey')]"
+					},
 					"DS_SQL_MIGRATION_password": {
 						"value": "[parameters('DS_SQL_MIGRATION_password')]"
 					},
+					"LS_ONPREM_sqlserver_DW_password": {
+						"value": "[parameters('LS_ONPREM_sqlserver_DW_password')]"
+					},
+					"LS_SQLSERVER_TBLLKUP_password": {
+						"value": "[parameters('LS_SQLSERVER_TBLLKUP_password')]"
+					},
 					"SqlServer1_password": {
 						"value": "[parameters('SqlServer1_password')]"
+					},
+					"ADLS_SQL_PARQUET_properties_typeProperties_url": {
+						"value": "[parameters('ADLS_SQL_PARQUET_properties_typeProperties_url')]"
 					},
 					"integrationRuntime1_properties_typeProperties_linkedInfo_resourceId": {
 						"value": "[parameters('integrationRuntime1_properties_typeProperties_linkedInfo_resourceId')]"
@@ -87,6 +139,24 @@
 					},
 					"DS_SQL_MIGRATION_properties_typeProperties_userName": {
 						"value": "[parameters('DS_SQL_MIGRATION_properties_typeProperties_userName')]"
+					},
+					"LS_ONPREM_sqlserver_DW_properties_typeProperties_server": {
+						"value": "[parameters('LS_ONPREM_sqlserver_DW_properties_typeProperties_server')]"
+					},
+					"LS_ONPREM_sqlserver_DW_properties_typeProperties_database": {
+						"value": "[parameters('LS_ONPREM_sqlserver_DW_properties_typeProperties_database')]"
+					},
+					"LS_ONPREM_sqlserver_DW_properties_typeProperties_userName": {
+						"value": "[parameters('LS_ONPREM_sqlserver_DW_properties_typeProperties_userName')]"
+					},
+					"LS_SQLSERVER_TBLLKUP_properties_typeProperties_server": {
+						"value": "[parameters('LS_SQLSERVER_TBLLKUP_properties_typeProperties_server')]"
+					},
+					"LS_SQLSERVER_TBLLKUP_properties_typeProperties_database": {
+						"value": "[parameters('LS_SQLSERVER_TBLLKUP_properties_typeProperties_database')]"
+					},
+					"LS_SQLSERVER_TBLLKUP_properties_typeProperties_userName": {
+						"value": "[parameters('LS_SQLSERVER_TBLLKUP_properties_typeProperties_userName')]"
 					},
 					"SqlServer1_properties_typeProperties_server": {
 						"value": "[parameters('SqlServer1_properties_typeProperties_server')]"

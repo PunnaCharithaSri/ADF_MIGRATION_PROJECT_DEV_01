@@ -5,11 +5,23 @@
 		"factoryName": {
 			"value": "adf-migration-project-dev-01"
 		},
+		"ADLS_SQL_PARQUET_accountKey": {
+			"value": ""
+		},
 		"DS_SQL_MIGRATION_password": {
+			"value": ""
+		},
+		"LS_ONPREM_sqlserver_DW_password": {
+			"value": ""
+		},
+		"LS_SQLSERVER_TBLLKUP_password": {
 			"value": ""
 		},
 		"SqlServer1_password": {
 			"value": ""
+		},
+		"ADLS_SQL_PARQUET_properties_typeProperties_url": {
+			"value": "https://adlsmigrationprojectdev.dfs.core.windows.net/"
 		},
 		"DS_SQL_MIGRATION_properties_typeProperties_server": {
 			"value": "PRAVALLIKA\\SQLEXPRESS"
@@ -18,6 +30,24 @@
 			"value": "Visionboardmigration"
 		},
 		"DS_SQL_MIGRATION_properties_typeProperties_userName": {
+			"value": "sa"
+		},
+		"LS_ONPREM_sqlserver_DW_properties_typeProperties_server": {
+			"value": "PRAVALLIKA\\SQLEXPRESS"
+		},
+		"LS_ONPREM_sqlserver_DW_properties_typeProperties_database": {
+			"value": "RetailDW_Dev"
+		},
+		"LS_ONPREM_sqlserver_DW_properties_typeProperties_userName": {
+			"value": "sa"
+		},
+		"LS_SQLSERVER_TBLLKUP_properties_typeProperties_server": {
+			"value": "PRAVALLIKA\\SQLEXPRESS"
+		},
+		"LS_SQLSERVER_TBLLKUP_properties_typeProperties_database": {
+			"value": "RetailDW_Dev"
+		},
+		"LS_SQLSERVER_TBLLKUP_properties_typeProperties_userName": {
 			"value": "sa"
 		},
 		"SqlServer1_properties_typeProperties_server": {
