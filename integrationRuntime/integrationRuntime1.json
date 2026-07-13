@@ -1,0 +1,12 @@
+{
+	"name": "integrationRuntime1",
+	"properties": {
+		"type": "SelfHosted",
+		"typeProperties": {
+			"linkedInfo": {
+				"resourceId": "/subscriptions/312009e1-1511-4975-acfa-117e678074ae/resourcegroups/rg_adf_lab/providers/Microsoft.DataFactory/factories/adf-dev-prac-01/integrationruntimes/SHintegrationRuntime",
+				"authorizationType": "Rbac"
+			}
+		}
+	}
+}
